@@ -57,7 +57,7 @@ checkBtn.addEventListener("click", () => {
     resultDiv.style.backgroundColor = "hsl(138, 100%, 90%)";
     resultDiv.style.padding = "2rem";
     showItem(resultDiv);
-  } else if (cash - bill > 1) {
+  } else if (cash - bill >= 1) {
     hideItem(errorDiv);
     calculateChange(bill, cash);
     showItem(resultDiv);
