@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;900&display=swap");
 
 *,
 *::after,
@@ -21,12 +21,17 @@
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--bg-gray);
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .container {
@@ -42,7 +47,6 @@ header {
 
 header h1 {
   font-weight: 900;
-  font-size: 2.6rem;
 }
 
 footer {
@@ -56,6 +60,28 @@ footer b {
   font-weight: 700;
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-wrapper > * {
+  margin: 0.5rem;
+}
+
+.footer-list {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-list > li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
 button,
 input {
   font-family: inherit;
@@ -64,8 +90,8 @@ input {
 /* Styles specific to project */
 
 main {
-  min-height: calc(100vh - 9.8rem);
-  padding: 2rem 0;
+  min-height: calc(100vh - 12rem);
+  padding: 1rem 0;
 }
 
 .wrapper {
