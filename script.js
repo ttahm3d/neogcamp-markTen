@@ -47,7 +47,7 @@ checkBtn.addEventListener("click", () => {
   if (cash <= 0) {
     errorDiv.innerText = "Paid Amount can't be zero or less!! Please check";
     showItem(errorDiv);
-  } else if (cash - bill < 1) {
+  } else if (cash - bill < 0) {
     errorDiv.innerText = "Paid Amount can't be less than bill amount";
     showItem(errorDiv);
   } else if (cash === bill) {
